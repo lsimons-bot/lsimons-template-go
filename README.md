@@ -27,7 +27,14 @@ Project template for Go CLI tools with standardized tooling.
 - **golangci-lint v2** for linting (`.golangci.yml`)
 - **gofumpt + goimports** for formatting (enforced via golangci-lint)
 - **`go test -race -cover`** for tests and coverage
-- **GitHub Actions CI** on push/PR to main
+- **GitHub Actions CI** on push/PR to main, with actions pinned to
+  full-length commit SHAs (the repo setting *Require actions to be
+  pinned to a full-length commit SHA* is enabled)
+
+> **Note:** CI is red on this template repo itself — the `$project`
+> placeholder in `go.mod` makes the module path malformed on purpose.
+> Once you fork and do the search/replace described above, CI turns
+> green.
 
 ## Project Structure
 
