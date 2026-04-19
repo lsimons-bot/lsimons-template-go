@@ -6,6 +6,10 @@
 *.dylib
 bin/
 dist/
+# default CLI output from `go build ./...` on *nix (matches module name)
+/lsimons-template
+# After `mise run init` replaces the placeholder, keep the module-named
+# binary out of git by renaming this line to /<your-project>.
 
 # Test binaries and output
 *.test
